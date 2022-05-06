@@ -1,0 +1,124 @@
+:root {
+  --background: hsl(217, 54%, 11%);
+  --card: hsl(216, 50%, 16%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Outfit', sans-serif;
+}
+
+.card {
+  background-color: var(--card);
+  border-radius: 20px;
+  height: 560px;
+  width: 350px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+
+  box-shadow: 10px 10px 5px 12px var(--card-shadow);
+} 
+
+.image-equilibrium {
+  border-radius: 20px;
+  height: 300px;
+  left: 0;
+  margin: 25px;
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+.photo-hover-effect {
+  border-radius: 20px;
+  display: block;
+  height: 300px;
+  margin: 25px;
+  opacity: 0.5;
+  position: relative;
+  width: 300px;
+}
+
+.photo-hover-effect:hover {
+  background-color: var(--cyan);
+  background-image: url('icons/icon-view.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.header {
+  color: var(--white);
+  margin: -10px 24px;
+}
+
+.header:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--soft-blue);
+  font-size: 18px;
+  margin: 24px 0 0 24px;
+}
+
+.icon-ethereum {
+  float: left;
+  margin: 17px 7px 0 24px ;
+}
+
+.price-ethereum {
+  color: var(--cyan);
+  float: left;
+}
+
+.days {
+  color: var(--soft-blue);
+  float: right;
+  margin-right: 24px;
+}
+
+.icon-clock {
+  margin: 17px 7px 0 114px ;
+}
+
+.separator {
+  background-color: var(--soft-blue);
+  border: 0;
+  height: 2px;
+  width: 300px;
+}
+
+.image-avatar {
+  border-radius: 50%;
+  border: 2px var(--white) solid;
+  float: left;
+  height: 35px;
+  margin: 7px 24px;
+  width: 35px;
+}
+
+.creation {
+  color: var(--soft-blue);
+  margin-top: 25px;
+}
+
+.jules-wyvern {
+  color: var(--white);
+}
+
+.jules-wyvern:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
